@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // 顯示卡片 (利用 CSS 的 fade-in/fade-out 效果)
                 card.classList.remove('hidden-card');
                 // 讓卡片自己跑到最前面
-                ggridContainer.prepend(card.parentElement);
+                gridContainer.prepend(card.closest('.card-link'));
                 visibleCount++;
             } else {
                 // 隱藏卡片
