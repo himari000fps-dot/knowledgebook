@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const filterTags = document.querySelectorAll('.filter-tag'); // 所有篩選按鈕
     const knowledgeCards = document.querySelectorAll('.knowledge-card'); // 所有知識卡片
     const searchInput = document.getElementById('search-input'); // 搜尋輸入框
-    const gridContainer = document.querySelector('.knowledge-grid'); // 卡片容器
+    const gridContainer = document.querySelector('.knowledge-grid'); // 卡片
 
     // --- 1. 篩選功能 ---
     
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // 顯示卡片 (利用 CSS 的 fade-in/fade-out 效果)
                 card.classList.remove('hidden-card');
                 // 讓卡片自己跑到最前面
-                gridContainer.prepend(card);
+                ggridContainer.prepend(card.parentElement);
                 visibleCount++;
             } else {
                 // 隱藏卡片
